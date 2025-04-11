@@ -1,18 +1,16 @@
 /* Imports the Poppins font from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
 :root {
-    --main-color: #00ff73;       /* verde neon */
-    --text-color: #e0f2f1;       /* branco esverdeado suave, mais agradável que #fff puro */
-    --bg-color-01: #121212;      /* fundo escuro profundo - dá destaque ao neon */
-    --bg-color-02: #1e1e1e;      /* fundo secundário levemente mais claro */
-    --color-00: #00b359;
+    --main-color: #00cfff;       /* azul claro elegante substituindo o verde neon */
+    --text-color: #e0f2f1;       /* branco esverdeado suave */
+    --bg-color-01: #121212;      /* fundo escuro profundo */
+    --bg-color-02: #1e1e1e;      /* fundo secundário */
+    --color-00: #00aacc;         /* azul suave substituindo verde escuro */
 
     /* Extra */
-
     --color-01:#999999;
-    --color-02: #009539;
+    --color-02: #0095c9;         /* azul substituindo verde */
     --color-03: #7950f2;
     --color-04: #c00000;
     --color-05: #232323;
@@ -27,7 +25,6 @@
     outline: none;
     scroll-behavior: smooth;
 }
-
 
 html {
     font-family: 'Poppins', sans-serif;
@@ -68,7 +65,6 @@ header {
     padding: 1rem;
     background-color: var(--bg-color-01);
 }
-
 
 .nav a, .nav-responsive a {
     font-size: 1.2rem;
@@ -184,7 +180,6 @@ span {
 .services-box p {
     margin: 0.5rem;
     letter-spacing: 0.1rem;
-    /* N lines ... */
     display: -webkit-box;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
@@ -193,7 +188,7 @@ span {
 }
 
 .portfolio {
-    background-color:var(--bg-color-02) ;    
+    background-color:var(--bg-color-02);    
 }
 
 .portfolio-container {
@@ -264,7 +259,7 @@ span {
 
 .skills {
     padding: 2rem;
-    padding-top: calc(2rem + 80px); /* Ajuste '80px' para o valor da altura do cabeçalho */
+    padding-top: calc(2rem + 80px);
     background: var(--bg-color-02);
 }
 
@@ -334,7 +329,6 @@ footer {
     align-items: center;
     padding: 1.2rem;
     background-color: var(--bg-color-01);
-
 }
 
 .social-media img{
@@ -362,9 +356,7 @@ footer {
     box-shadow: 0 0 0.3rem var(--main-color);
 }
 
-
 /* Button */
-
 .btn {
     display: inline-block;
     padding: 0.7rem 1.8rem;
@@ -382,10 +374,7 @@ footer {
     background-color: inherit;
     color: var(--main-color);
     cursor: pointer;
-
-
 }
-
 /* /Button */
 
 /* Menu hamburguer */
@@ -413,12 +402,9 @@ footer {
 .change .bar3 {
     transform: translate(0, -0.65rem) rotate(45deg);
 }
-
 /* /Menu hamburguer */
 
 /* media queries */
-
-/* Extra Small(xs): Smartphone (portrait) */
 @media (min-width: 0px) {
     .menu-hamburguer{
         display: block;
@@ -472,9 +458,7 @@ footer {
     }
 }
 
-/* Small (sm): Smartphone (landscape) */
 @media (min-width: 576px) {
-    
     .home-img, .about-img{
         width: 65%;
         max-width: 65%;
@@ -485,9 +469,7 @@ footer {
     }
 }
 
-/* Medium (md): Tablet */
 @media (min-width: 768px) {
-    
     .menu-hamburguer{
         display: none;
     }
@@ -527,7 +509,6 @@ footer {
     }
 }
 
-/* Large (lg): Notebook */
 @media (min-width:992px) {
     .services-container {
         flex-direction: row;
@@ -535,12 +516,11 @@ footer {
     }
 }
 
-/* Extra Large (xl): Desktop */
 @media (min-width: 1200px) {
     .home-img, .about-img {
         max-width: 25%;  
     }
-    
+
     .home-content h1 {
         font-size: 2.7rem;   
     }
@@ -553,5 +533,4 @@ footer {
         grid-template-columns: auto auto auto;
     }
 }
-
 /* /media queries */
